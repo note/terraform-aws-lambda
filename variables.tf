@@ -74,3 +74,9 @@ variable "memory_size" {
   type        = number
   default     = 256
 }
+
+variable "log_retention" {
+  description = "CloudWatch log retention in days"
+  type        = number
+  default     = 7
+}

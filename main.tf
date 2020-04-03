@@ -13,6 +13,11 @@ resource "aws_s3_bucket_object" "endpoint_s3_object" {
   etag = filemd5(var.artifact_file_name)
 }
 
+resource "aws_cloudwatch_log_group" "lambda" {
+  name              = "/aws/lambda/${var.function_name}"
+  retention_in_days = var.log_retention
+}
+
 resource "aws_lambda_function" "lambda_function" {
   s3_bucket     = var.deployment_s3_bucket_name
   s3_key        = aws_s3_bucket_object.endpoint_s3_object.key
@@ -30,7 +35,7 @@ resource "aws_lambda_function" "lambda_function" {
   timeout = var.timeout
   memory_size = var.memory_size
 
-  depends_on = [aws_iam_role_policy_attachment.lambda_logs]
+  depends_on = [aws_iam_role_policy_attachment.lambda_logs, aws_cloudwatch_log_group.lambda]
 }
 
 resource "aws_lambda_permission" "apigw" {
