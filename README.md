@@ -18,6 +18,7 @@
 | api\_gateway\_rest\_api\_id | id of aws\_api\_gateway\_rest\_api | `string` | `""` | no |
 | api\_gateway\_rest\_api\_root\_resource\_id | root\_resource\_id of aws\_api\_gateway\_rest\_api | `string` | `""` | no |
 | artifact\_file\_name | filename of the articat to be deployed (zip/jar file) | `string` | n/a | yes |
+| base\_layers | List of Lambda Layers. Each item is an ARN | `list(string)` | `[]` | no |
 | deployment\_s3\_bucket\_name | name of s3 bucket to which zip artifact will be uploaded to | `string` | n/a | yes |
 | function\_name | AWS lambda function name. Has nothing to do with function name in the backend code itself | `string` | n/a | yes |
 | handler | Function from the backend code to be called. Format and its semantics depends on programming language and packaging method | `string` | n/a | yes |
