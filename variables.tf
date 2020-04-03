@@ -8,7 +8,7 @@ variable "api_gateway_rest_api_id" {
   type        = string
 
   // Use the default for lambda with not API GW integration (e.g. triggered by event instead of API call)
-  default     = ""
+  default = ""
 }
 
 variable "api_gateway_rest_api_root_resource_id" {
@@ -16,7 +16,7 @@ variable "api_gateway_rest_api_root_resource_id" {
   type        = string
 
   // Use the default for lambda with not API GW integration (e.g. triggered by event instead of API call)
-  default     = ""
+  default = ""
 }
 
 variable "api_gateway_rest_api_arn" {
@@ -24,7 +24,7 @@ variable "api_gateway_rest_api_arn" {
   type        = string
 
   // Use the default for lambda with not API GW integration (e.g. triggered by event instead of API call)
-  default     = ""
+  default = ""
 }
 
 variable "http_method" {
@@ -32,7 +32,7 @@ variable "http_method" {
   type        = string
 
   // Use the default for lambda with not API GW integration (e.g. triggered by event instead of API call)
-  default     = ""
+  default = ""
 }
 
 variable "path_part" {
@@ -40,7 +40,7 @@ variable "path_part" {
   type        = string
 
   // Use the default for lambda with not API GW integration (e.g. triggered by event instead of API call)
-  default     = ""
+  default = ""
 }
 
 variable "function_name" {
