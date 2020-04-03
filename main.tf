@@ -35,6 +35,8 @@ resource "aws_lambda_function" "lambda_function" {
   timeout     = var.timeout
   memory_size = var.memory_size
 
+  layers      = var.base_layers
+
   depends_on = [aws_iam_role_policy_attachment.lambda_logs, aws_cloudwatch_log_group.lambda]
 }
 

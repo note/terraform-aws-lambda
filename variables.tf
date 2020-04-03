@@ -80,3 +80,9 @@ variable "log_retention" {
   type        = number
   default     = 7
 }
+
+variable "base_layers" {
+  description = "List of Lambda Layers. Each item is an ARN"
+  type        = list(string)
+  default     = []
+}
