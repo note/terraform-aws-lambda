@@ -31,8 +31,10 @@
 
 ## Outputs
 
-No output.
+| Name | Description |
+|------|-------------|
+| lambda\_role\_arn | ARN of lambda role |
 
 ## Known shortcomings
 
-It generates new IAM policy for each of lambda function.
+It generates new `aws_iam_policy` for each of lambda function even though it's always the same.
