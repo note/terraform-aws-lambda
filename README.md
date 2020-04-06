@@ -33,7 +33,7 @@
 
 | Name | Description |
 |------|-------------|
-| lambda\_role\_arn | ARN of lambda role |
+| lambda\_role\_name | lambda role name |
 
 ## Known shortcomings
 
