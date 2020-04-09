@@ -33,7 +33,7 @@
 
 | Name | Description |
 |------|-------------|
-| function\_name | lambda role name |
+| function\_name | AWS Lambda function name |
 | lambda\_role\_name | lambda role name |
 
 

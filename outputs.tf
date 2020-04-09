@@ -4,6 +4,6 @@ output "lambda_role_name" {
 }
 
 output "function_name" {
-  description = "lambda role name"
+  description = "AWS Lambda function name"
   value = aws_lambda_function.lambda_function.function_name
 }
