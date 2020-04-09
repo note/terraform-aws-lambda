@@ -33,7 +33,9 @@
 
 | Name | Description |
 |------|-------------|
+| function\_name | lambda role name |
 | lambda\_role\_name | lambda role name |
+
 
 ## Known shortcomings
 
